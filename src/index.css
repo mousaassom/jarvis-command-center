@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 3% 9%;
+    --foreground: 60 20% 97%;
+    --border: 45 20% 24%;
+    --ring: 196 90% 60%;
+  }
+  * { border-color: hsl(var(--border)); }
+  html { min-width: 320px; background: #171612; scroll-behavior: smooth; }
+  body { margin: 0; min-width: 320px; min-height: 100dvh; background: #171612; color: #fefeed; }
+  body, button, input { font-family: 'Space Grotesk', sans-serif; }
+  ::selection { background: #c10328; color: #fefeed; }
+}
